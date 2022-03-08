@@ -4,7 +4,7 @@ from scipy.stats import linregress
 
 def draw_plot():
     # Read data from file
-    df = pd.read_csv('epa-sea-level.csv')
+    df = pd.read_csv('data/epa-sea-level.csv')
     
         # getting equation of line from linegress
     (slope, intercept, rvalue, pvalue, stdrr) = linregress(df['Year'],df['CSIRO Adjusted Sea Level'])
